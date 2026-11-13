@@ -2,8 +2,6 @@
     --primary-color:#412B2B;
     --secondary-color: #FFE65B;
     --dark-color: #150A06;
-;
-
 }
 body{
     margin: 0;
@@ -12,12 +10,15 @@ a{
     text-decoration: none;
 }
 @font-face {
-    font-family: impact;
-    src: url(Fonts/Impact.ttf) format("ttf");
+    font-family: 'Impact';
+    src: url('./Fonts/Impact.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 @font-face {
     font-family: "General Sans", sans-serif;
     src: url(Fonts/GeneralSans-Variable.ttf) format("truetype");
+    font-weight: 200 700;
     font-weight: 400;
 }
 .container{
@@ -52,6 +53,20 @@ p{
    font-family: "General Sans", sans-serif;
     font-size: 18px;
     margin: 0 0 25px;
+}
+figure{
+    margin: 0;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-uppercase{
+    text-transform: uppercase;
 }
 .header-top{
     background-color: var(--primary-color);
@@ -163,4 +178,43 @@ header {
 }
 .header-actions img{
     display: block;
+}
+
+.products{
+    padding: 100px 0;
+}
+.products .sec-title{
+    max-width: 770px;
+    margin: 0 auto;
+}
+.products .sec-title h2{
+    margin-bottom: 5px;
+}
+.products-grid{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.products-grid-item{
+    width: calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+}
+.product-title-price{
+    display: flex;
+}
+.product-price{
+    white-space: nowrap;
+}
+.product-title-price h3{
+    font-family: "General Sans", sans-serif;
+    font-size: 20PX;
+}
+.original-price{
+    text-decoration: line-through;
+    font-size: 15px;
+    color: #4444;
+}
+.product-variants{
+    font-size: 16px;
+    color: #150A06;
 }
