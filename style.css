@@ -218,3 +218,46 @@ header {
     font-size: 16px;
     color: #150A06;
 }
+.limitted-stock{
+    max-height: 900px;
+    min-height: 500px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+.limitted-stock .timer-top img,
+.limitted-stock .timer-bottom img{
+    width: 100%;
+} 
+.stock-tittle{
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 130px 0;
+    height: 219px;
+    text-align: center;
+
+}
+.stock-tittle h2{
+    text-transform: none;  
+    margin-left: 100px;        
+}
+.stock-tittle p{
+    max-width: 436px;              
+    margin: 0 auto 24px;
+    font-family: "General Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+.limitted-stock .btn{
+    background-color: #ffffff;
+    display: inline-flex;
+    height: 56px;
+    padding: 0 24px;
+    color: var(--dark-color);
+    align-items: center;
+    gap: 8px;
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+}
